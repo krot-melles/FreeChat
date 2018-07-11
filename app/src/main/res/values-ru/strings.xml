@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Настройки</string>
+    <string name="about">Версия</string>
+    <string name="login_success">вход успешный</string>
+    <string name="login">ВХОД</string>
+    <string name="Password">Пароль</string>
+    <string name="forgot_your_password">Забыли пароль?</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="next">СЛЕДУЮЩАЯ</string>
+    <string name="register">РЕГИСТРАЦИЯ</string>
+    <string name="create_group">Создать группу</string>
+
+    <string name="hint_username">Новый пароль</string>
+    <string name="hint_email_reset">Введите email</string>
+    <string name="enter_group_name">Название группы</string>
+    <string name="save">Сохранить</string>
+    <string name="add_friends">Добавить друга</string>
+    <string name="enter_friend_email">"Введите email друга "</string>
+    <string name="email_not_found">Email ненайден</string>
+    <string name="add_group_error">Для создания группы нужно 2 человека</string>
+    <string name="cancel">"Отменить "</string>
+    <string name="edit_username">Сменить логин</string>
+</resources>
