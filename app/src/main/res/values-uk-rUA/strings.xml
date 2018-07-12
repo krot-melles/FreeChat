@@ -25,7 +25,8 @@
     <string name="about_youtube">Канал YouTube</string>
     <string name="about_github">Програмний код GitHub</string>
     <string name="about_website">Відвідайте мій сайт</string>
-    <string name="about_contact_us">Написати email</string>
+    <string name="about_contact_us">Відправити email</string>
     <string name="Username">Нікнейм</string>
+    <string name="connect_group">Контакти</string>
 
 </resources>

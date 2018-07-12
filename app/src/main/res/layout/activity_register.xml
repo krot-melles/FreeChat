@@ -17,7 +17,7 @@
             android:layout_height="320dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            app:cardBackgroundColor="#a62e34"
+            app:cardBackgroundColor="@color/colorAccent"
             app:cardCornerRadius="6dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
@@ -132,7 +132,7 @@
                     android:background="@drawable/bt_shape_2"
                     android:stateListAnimator="@drawable/state_list_animator_z"
                     android:text="@string/go"
-                    android:textColor="#a82f31"
+                    android:textColor="@color/colorAccent"
                     android:onClick="clickRegister"/>
 
             </LinearLayout>

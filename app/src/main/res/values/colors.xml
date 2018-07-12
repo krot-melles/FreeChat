@@ -3,7 +3,7 @@
     <color name="colorPrimary">#aeaeae</color>
     <color name="colorPrimaryDark">@color/gray_900</color>
     <color name="colorPrimaryDarkLight">@color/gray_700</color>
-    <color name="colorAccent">#a82f37</color>
+    <color name="colorAccent">@color/gray_900</color>
     <color name="colorIndivateTab">#FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="colorCardView">#f7f7f7</color>

@@ -249,7 +249,7 @@ public class AboutPage {
         return this;
     }
 
-    public AboutPage addGroup(String name){
+    public AboutPage addGroup(int name){
 
         TextView textView = new TextView(mContext);
         textView.setText(name);

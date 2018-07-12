@@ -26,12 +26,18 @@ android {
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
-        versionName "0.9.4"
+        versionName "0.9.4/1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+
     applicationVariants.all {
         variant -> variant.resValue "string", "version", variant.versionName
     }
+
+
+
+
     buildTypes {
         release {
             minifyEnabled false

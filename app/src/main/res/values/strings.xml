@@ -39,5 +39,6 @@
     <string name="about_twitter" translatable="false">Follow us on Twitter</string>
     <string name="about_github">Fork us on GitHub</string>
     <string name="about_website">Visit my website</string>
+    <string name="connect_group">Connect with us</string>
 
 </resources>

@@ -25,5 +25,6 @@
     <string name="about_github">Исходный код GitHub</string>
     <string name="about_website">Наш мой сайт</string>
     <string name="Username">Логин</string>
-    <string name="about_contact_us">Написать email</string>
+    <string name="about_contact_us">Отправить email</string>
+    <string name="connect_group">Контакты</string>
 </resources>
