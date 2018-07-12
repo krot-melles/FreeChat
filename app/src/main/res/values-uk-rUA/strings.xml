@@ -2,7 +2,7 @@
 <resources>
 
         <string name="action_settings">Налаштування</string>
-        <string name="about">Версія</string>
+        <string name="about">Про програму</string>
         <string name="login_success">вхід успішний</string>
         <string name="login">УВІЙТИ</string>
         <string name="Password">Пароль</string>
@@ -22,5 +22,10 @@
         <string name="add_group_error">Для створення групи потрібно 2 людини</string>
         <string name="cancel">Відмінити</string>
         <string name="edit_username">Змінити нікнейм</string>
+    <string name="about_youtube">Канал YouTube</string>
+    <string name="about_github">Програмний код GitHub</string>
+    <string name="about_website">Відвідайте мій сайт</string>
+    <string name="about_contact_us">Написати email</string>
+    <string name="Username">Нікнейм</string>
 
 </resources>

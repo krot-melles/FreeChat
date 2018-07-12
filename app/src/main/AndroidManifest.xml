@@ -42,6 +42,7 @@
             android:parentActivityName="ua.ucoz.oldfriends.FreeChat.MainActivity"/>
         <activity android:name="ua.ucoz.oldfriends.FreeChat.ui.AddGroupActivity"
             android:theme="@style/MyThemeNoActionbar"/>
+        <activity android:name=".AboutActivity"/>
         <service android:name="ua.ucoz.oldfriends.FreeChat.service.FriendChatService"
             android:exported="false"
             android:persistent= "true" />

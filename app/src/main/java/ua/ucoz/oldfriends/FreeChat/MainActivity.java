@@ -1,11 +1,14 @@
 package ua.ucoz.oldfriends.FreeChat;
 
+import android.content.ClipData;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
@@ -29,13 +32,12 @@ import ua.ucoz.oldfriends.FreeChat.ui.FriendsFragment;
 import ua.ucoz.oldfriends.FreeChat.ui.GroupFragment;
 import ua.ucoz.oldfriends.FreeChat.ui.LoginActivity;
 import ua.ucoz.oldfriends.FreeChat.ui.UserProfileFragment;
+
 import ua.ucoz.oldfriends.FreeChat.util.ViewTool;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    AboutFragment aboutFragment;
-    FragmentManager fragmentManager;
 
     private static String TAG = "MainActivity";
     private ViewPager viewPager;
@@ -203,47 +205,43 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-  @Override
-public boolean onOptionsItemSelected(MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
-      // as you specify a parent activity in AndroidManifest.xml.
+        // as you specify a parent activity in AndroidManifest.xml
+        //     FragmentManager fragmentManager = getSupportFragmentManager();
+        //     Fragment nextFragment;
 
-      FragmentTransaction transaction = fragmentManager.beginTransaction();
-      ViewTool.hideFragments(transaction, aboutFragment);
+//      switch (item.getItemId()) {
+        //         default:
+        //        case R.id.about:
+        //             nextFragment = new AboutFragment();
+        //             break;
+        //     }
+        //     fragmentManager.beginTransaction()
+        //             .replace(R.id.container, nextFragment)
+        //            .addToBackStack((String) setTitle()).commit();
 
-             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-             if (toolbar != null) {
-                 setSupportActionBar(toolbar);
-                 getSupportActionBar().setTitle(R.string.about);
-             }
-             if (aboutFragment != null) {
-                 transaction.show(aboutFragment);
-             } else {
-                 aboutFragment = AboutFragment.newInstance();
-                 transaction.add(R.id.about, aboutFragment);
-             }
-             transaction.commit();
+        //     if (id == R.id.about){
 
-
- //     if (id == R.id.about){
-
-  //        Intent intent = new Intent(this, AboutFragment.class);
-  //        ((MainActivity) this).startActivity(intent);
-  //        return true;
-  //    }
+        //        Intent intent = new Intent(this, AboutFragment.class);
+        //        ((MainActivity) this).startActivity(intent);
+        //        return true;
+        //    }
 
 //      if (id == R.id.about) {
 //           Toast.makeText(this, R.string.version, Toast.LENGTH_LONG).show();
-//          return true;
-//     switch (item.getItemId()){
-  //      case R.id.about:
-  //          Intent intent1 = new Intent(MainActivity.this, AboutFragment.class);
- //           startActivity(intent1);
-  //          break;
- //      }
-   return super.onOptionsItemSelected(item);
- }
+ //         return true;
+          switch (item.getItemId()){
+             case R.id.about:
+               Intent intentabout = new Intent(MainActivity.this, AboutActivity.class);
+               startActivity(intentabout);
+               break;
+         }
+        return super.onOptionsItemSelected(item);
+    }
+
 
 
     /**

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="action_settings">Настройки</string>
-    <string name="about">Версия</string>
+    <string name="about">О программе</string>
     <string name="login_success">вход успешный</string>
     <string name="login">ВХОД</string>
     <string name="Password">Пароль</string>
@@ -21,4 +21,9 @@
     <string name="add_group_error">Для создания группы нужно 2 человека</string>
     <string name="cancel">"Отменить "</string>
     <string name="edit_username">Сменить логин</string>
+    <string name="about_youtube">Канал YouTube</string>
+    <string name="about_github">Исходный код GitHub</string>
+    <string name="about_website">Наш мой сайт</string>
+    <string name="Username">Логин</string>
+    <string name="about_contact_us">Написать email</string>
 </resources>
