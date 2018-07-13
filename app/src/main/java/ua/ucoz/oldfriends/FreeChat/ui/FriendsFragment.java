@@ -638,7 +638,7 @@ class ListFriendsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
 
         if (listFriend.getListFriend().get(position).status.isOnline) {
-            ((ItemFriendViewHolder) holder).avata.setBorderWidth(10);
+            ((ItemFriendViewHolder) holder).avata.setBorderWidth(6);
         } else {
             ((ItemFriendViewHolder) holder).avata.setBorderWidth(0);
         }

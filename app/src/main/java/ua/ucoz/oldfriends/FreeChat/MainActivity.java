@@ -32,6 +32,8 @@ import ua.ucoz.oldfriends.FreeChat.ui.FriendsFragment;
 import ua.ucoz.oldfriends.FreeChat.ui.GroupFragment;
 import ua.ucoz.oldfriends.FreeChat.ui.LoginActivity;
 import ua.ucoz.oldfriends.FreeChat.ui.UserProfileFragment;
+import ua.ucoz.oldfriends.FreeChat.service.FriendChatService;
+
 
 import ua.ucoz.oldfriends.FreeChat.util.ViewTool;
 
@@ -78,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void initFirebase() {
         //Khoi tao thanh phan de dang nhap, dang ky
         mAuth = FirebaseAuth.getInstance();
@@ -103,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         mAuth.addAuthStateListener(mAuthListener);
-        ServiceUtils.stopServiceFriendChat(getApplicationContext(), false);
+        ServiceUtils.startServiceFriendChat(getApplicationContext());
     }
 
     @Override
@@ -112,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
         if (mAuthListener != null) {
             mAuth.removeAuthStateListener(mAuthListener);
         }
+        ServiceUtils.startServiceFriendChat(getApplicationContext());
+
     }
 
     @Override
